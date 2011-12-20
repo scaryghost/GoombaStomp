@@ -1,0 +1,1 @@
+class GSHumanPawn extends KFHumanPawn;

@@ -20,5 +20,5 @@ function PostBeginPlay() {
 defaultproperties {
     GroupName="KFGoombaStomp"
     FriendlyName="Goomba Stomp"
-    Description="All of Scary Ghost's dosh mutators combined in mutator.  Version 1.0.0"
+    Description="Jump on your foes!  Version 1.0.0"
 }

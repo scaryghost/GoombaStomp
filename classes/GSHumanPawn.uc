@@ -12,14 +12,14 @@ singular event BaseChange() {
     else if ( Pawn(Base) != None && Base != DrivenVehicle ) {
         if ( !Pawn(Base).bCanBeBaseForPawns ) {
             Base.TakeDamage( (1-Velocity.Z/400)* Mass/Base.Mass, Self ,
-                    Location,0.5 * Velocity , class'Crushed');
+                    Location,0.5 * Velocity , class'DamTypeStomp');
             JumpOffPawn();
         }
     }
     else if ( (Decoration(Base) != None) && (Velocity.Z < -400) ) {
         decorMass = FMax(Decoration(Base).Mass, 1);
         Base.TakeDamage((-2* Mass/decorMass * Velocity.Z/400), Self, 
-                Location, 0.5 * Velocity, class'Crushed');
+                Location, 0.5 * Velocity, class'DamTypeStomp');
     }
 }
 

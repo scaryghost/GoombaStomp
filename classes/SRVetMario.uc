@@ -3,7 +3,6 @@ class SRVetMario extends SRVeterancyTypes
 
 static function AddCustomStats( ClientPerkRepLink Other) {
     Other.AddCustomValue(class'StompProgressInt');
-    class'DualiesFire'.default.DamageType= class'DamTypeStomp';
 }
 
 static function int GetPerkProgressInt( ClientPerkRepLink StatOther, out int FinalInt, byte CurLevel, byte ReqNum )

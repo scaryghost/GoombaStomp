@@ -1,4 +1,4 @@
-class DamTypeStomp extends Crushed
+class DamTypeStomp extends KFWeaponDamageType;
     abstract;
 
 static function AwardDamage(KFSteamStatsAndAchievements KFStatsAndAchievements, int Amount) {
@@ -8,7 +8,12 @@ static function AwardDamage(KFSteamStatsAndAchievements KFStatsAndAchievements, 
     
 
 defaultproperties {
-     DeathString="%o was stomped by %k."
-     FemaleSuicide="%o was stomped."
-     MaleSuicide="%o was stomped."
+    DeathString="%o was stomped by %k."
+    FemaleSuicide="%o was stomped."
+    MaleSuicide="%o was stomped."
+    bArmorStops=False
+    bAlwaysGib=True
+    bLocationalHit=False
+    GibPerterbation=1.000000
+    bCheckForHeadShots=False
 }

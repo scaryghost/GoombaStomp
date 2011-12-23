@@ -57,13 +57,13 @@ defaultproperties {
     OnHUDGoldIcon=Texture'GoombaStompTex.Perks.Perk_Mario_Gold'
     Requirements(0)="Deal %x stomp damage"
 
-    SRLevelEffects(0)="10% more stomp damage|Cannot by grabbed by clots|Grenades set enemies on fire"
-    SRLevelEffects(1)="20% more stomp damage|Cannot by grabbed by clots|Grenades set enemies on fire|20% increase is frag capacity"
-    SRLevelEffects(2)="40% more stomp damage|Cannot by grabbed by clots|Grenades set enemies on fire|40% increase is frag capacity"
-    SRLevelEffects(3)="60% more stomp damage|Cannot by grabbed by clots|Grenades set enemies on fire|60% increase is frag capacity"
-    SRLevelEffects(4)="80% more stomp damage|Cannot by grabbed by clots|Grenades set enemies on fire|80% increase is frag capacity"
-    SRLevelEffects(5)="100% more stomp damage|Cannot by grabbed by clots|Grenades set enemies on fire|100% increase is frag capacity"
-    SRLevelEffects(6)="120% more stomp damage|Cannot by grabbed by clots|Grenades set enemies on fire|120% increase is frag capacity"
+    SRLevelEffects(0)="10% more stomp damage|Cannot by grabbed by clots|Grenades set enemies on fire|Grenades detonate on impact"
+    SRLevelEffects(1)="20% more stomp damage|Cannot by grabbed by clots|Grenades set enemies on fire|Grenades detonate on impact|20% increase is frag capacity"
+    SRLevelEffects(2)="40% more stomp damage|Cannot by grabbed by clots|Grenades set enemies on fire|Grenades detonate on impact|40% increase is frag capacity"
+    SRLevelEffects(3)="60% more stomp damage|Cannot by grabbed by clots|Grenades set enemies on fire|Grenades detonate on impact|60% increase is frag capacity"
+    SRLevelEffects(4)="80% more stomp damage|Cannot by grabbed by clots|Grenades set enemies on fire|Grenades detonate on impact|80% increase is frag capacity"
+    SRLevelEffects(5)="100% more stomp damage|Cannot by grabbed by clots|Grenades set enemies on fire|Grenades detonate on impact|100% increase is frag capacity"
+    SRLevelEffects(6)="120% more stomp damage|Cannot by grabbed by clots|Grenades set enemies on fire|Grenades detonate on impact|120% increase is frag capacity"
 
     CustomLevelInfo="120% more stomp damage|Cannot by grabbed by clots|Grenades set enemies on fire|120% increase is frag capacity"
 }

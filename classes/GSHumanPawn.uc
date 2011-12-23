@@ -20,7 +20,7 @@ singular event BaseChange() {
         if ( !Pawn(Base).bCanBeBaseForPawns ) {
             stompCombo++;
             if (stompCombo > 7) {
-                PlaySound(eightComboSound, SLOT_None, 1.0, true, 500.0);
+                PlaySound(eightComboSound, SLOT_None, 2.0, true, 500.0);
             }
             stompDamage= min(stompCombo,8)*(-Velocity.Z/10*Mass/Base.Mass);
             Base.TakeDamage( stompDamage , Self ,

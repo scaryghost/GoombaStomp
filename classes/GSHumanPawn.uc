@@ -15,11 +15,11 @@ singular event BaseChange() {
     // Otherwise we do some damage and jump off.
     else if ( Pawn(Base) != None && Base != DrivenVehicle ) {
         if ( !Pawn(Base).bCanBeBaseForPawns ) {
+            stompCombo++;
             stompDamage= min(stompCombo,8)*(-Velocity.Z/10*Mass/Base.Mass);
             Base.TakeDamage( stompDamage , Self ,
                     Location,0.5 * Velocity , class'DamTypeStomp');
             JumpOffPawn();
-            stompCombo++;
             hitPawn= true;
         }
     }

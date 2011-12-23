@@ -1,7 +1,10 @@
 class GSHumanPawn extends KFHumanPawn;
 
+#exec OBJ LOAD FILE=GoombaStompSnd.uax
+
 var int stompCombo;
 var bool hitPawn;
+var Sound eightComboSound;
 
 singular event BaseChange() {
     local float decorMass;
@@ -16,6 +19,9 @@ singular event BaseChange() {
     else if ( Pawn(Base) != None && Base != DrivenVehicle ) {
         if ( !Pawn(Base).bCanBeBaseForPawns ) {
             stompCombo++;
+            if (stompCombo > 7) {
+                PlaySound(eightComboSound, SLOT_None, 1.0, true, 500.0);
+            }
             stompDamage= min(stompCombo,8)*(-Velocity.Z/10*Mass/Base.Mass);
             Base.TakeDamage( stompDamage , Self ,
                     Location,0.5 * Velocity , class'DamTypeStomp');
@@ -42,6 +48,7 @@ defaultproperties {
     bCanDoubleJump= true
     MultiJumpRemaining=1
     MaxMultiJump= 1
-
     StompCombo= 0
+
+    eightComboSound=Sound 'GoombaStompSnd.StompFX.Coin'
 }

@@ -53,8 +53,8 @@ defaultproperties {
     progressArray(6)=5500000
 
     VeterancyName="Mario"
-    OnHUDIcon=Texture'GoombaStomp.Perks.Perk_Mario'
-    OnHUDGoldIcon=Texture'GoombaStomp.Perks.Perk_Mario_Gold'
+    OnHUDIcon=Texture'GoombaStompTex.Perks.Perk_Mario'
+    OnHUDGoldIcon=Texture'GoombaStompTex.Perks.Perk_Mario_Gold'
     Requirements(0)="Deal %x stomp damage"
 
     SRLevelEffects(0)="10% more stomp damage|Cannot by grabbed by clots|Grenades set enemies on fire"

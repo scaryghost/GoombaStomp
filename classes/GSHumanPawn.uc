@@ -36,6 +36,12 @@ singular event BaseChange() {
     }
 }
 
+function bool DoJump( bool bUpdating ) {
+    PlayerController(Controller).ClientMessage(string(!bUpdating)$" - "$CanDoubleJump()$" - "$Abs(Velocity.Z)$" - "$IsLocallyControlled());
+    return super.DoJump(bUpdating);
+}
+
+
 event Landed(vector HitNormal) {
     super.Landed(HitNormal);
     if (!hitPawn) {
